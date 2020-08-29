@@ -1,10 +1,11 @@
 const { PUBLIC_PATH } = process.env;
+const CDN_IMAGE_SERVER = 'https://res.cloudinary.com/dtuhj8tau/image/upload/v1598692235'
 
 const createProduct = (id, name, price, review, rating, imageIndex) => {
   return {
     id,
     name,
-    image: `${PUBLIC_PATH}/images/product-${imageIndex}.jpg`,
+    image: `${CDN_IMAGE_SERVER}/product-${imageIndex}.jpg`,
     price,
     review,
     rating,
